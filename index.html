@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How old are you ?</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Berapa Usia Anda</h2>
+            <div class="boxInput">
+                <input id="usiaInput" type="number" placeholder="Contoh : 2003" />
+                <button onclick="cekUsia()">Cek Usia</button>
+            </div>
+            <p id="result" class="age"></p>
+        </div>
+    </div>
+
+    <!-- java script -->
+
+    <script>
+        
+        function cekUsia() {
+            const usiaInput = document.getElementById ('usiaInput')
+            const usia = usiaInput.value
+
+            const now = new Date(). getFullYear()
+            const calculate = now - usia
+
+            const result = document.getElementById ("result")
+
+            result.innerHTML = `usia anda : ${calculate}`
+
+        }
+
+    </script>
+</body>
+</html>

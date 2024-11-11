@@ -1,0 +1,53 @@
+*, html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 20%;
+    height: 40%;
+    border: 2px solid black;
+}
+h2 {
+    width: 100%;
+    height: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.boxInput {
+    gap: 10px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+}
+
+button {
+    width: 80%;
+    height: 30px;
+    
+}
+
+.age {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
